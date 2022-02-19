@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./solution-screenshot.jpg)
+![](./images/solution-screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/coming-soon-page-built-using-htmlcss-and-jquery-5YUK_xetX]
+- Live Site URL: [https://mohamedsalehjr.github.io/Base-Apparel-coming-soon-page/]
 
 ## My process
 
