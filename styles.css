@@ -7,6 +7,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     Font-size: 16px;
 }
+
 header {
     position: absolute;
     padding: 150px;
@@ -33,7 +34,7 @@ p {
 }
 
 button {
-    
+
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
     color: white;
@@ -44,14 +45,20 @@ button {
     top: inherit;
     left: 25rem;
 }
-button:hover{
-    background-image:  linear-gradient(135deg, hsl(0, 80%, 90%), hsl(0, 74%, 80%));
-  }
 
-::placeholder { 
+button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 90%), hsl(0, 74%, 80%));
+}
+
+input {
+    padding-left: 25px;
+}
+
+::placeholder {
     color: hsl(0, 36%, 70%);
-    opacity: 1; 
-  }
+    opacity: 1;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -62,11 +69,11 @@ button:hover{
 .box-1 {
     padding: 150px;
     text-align: left;
-    /* background-image: url('images/bg-pattern-desktop.svg'); */
-    width:auto;
+    width: auto;
     padding-right: 20%;
 }
-.box-2{
+
+.box-2 {
     width: 80%;
     height: 100vh;
     background-image: url('images/hero-desktop.jpg');
@@ -75,7 +82,8 @@ button:hover{
     background-position: center;
 }
 
-#email {
+
+.email {
     border-radius: 30px;
     border: 1px solid hsl(0, 36%, 70%);
     position: absolute;
@@ -85,45 +93,72 @@ button:hover{
     height: 45px;
 }
 
+.invalid {
+    border: 1.2px red solid;
+    background-image: url(./images/icon-error.svg);
+    background-position: 70% center;
+    background-repeat: no-repeat;
+}
+
 .form {
     margin-top: 30px;
+}
+
+.warning {
+    margin-top: 60px;
+    margin-left: 20px;
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    display: none;
 }
 
 @media (max-width: 768px) {
     .container {
         flex-direction: column-reverse;
     }
-    .box-2{
+
+    .box-2 {
         width: 100%;
-        height:300px;
+        height: 300px;
         background-image: url('images/hero-mobile.jpg');
         background-size: cover;
         background-position: top;
         margin-top: 80px;
     }
-    .box-1{
+
+    .box-1 {
         text-align: center;
         padding: 0;
-        margin-bottom:200px;
+        margin-bottom: 200px;
     }
-    button{
+
+    button {
         left: 80%;
     }
-    #email{
+
+    .email {
         position: relative;
         width: 80%;
     }
-    h1{
+
+    h1 {
         margin-top: 50px;
     }
-    header{
-       padding: 50px;
+
+    header {
+        padding: 50px;
+    }
+
+    .warning {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 30%;
     }
 }
 
 @media (max-width: 535px) {
-    button{
-        left: 70.5%;
+    button {
+        left: 72.5%;
     }
 }
-
